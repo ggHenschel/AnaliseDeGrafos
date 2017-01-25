@@ -1,0 +1,32 @@
+#:kivy 1.9.1
+
+<AnaliseDeGrafos>:
+    widht:340
+    height:220
+    f_path: path_text_input
+    GridLayout:
+        size: (320,200)
+        rows: 3
+        cols: 2
+        padding: 20
+        spacing: 10
+        Label:
+            text: "Path"
+            size_hint_x: 1
+            size_hint_y: 1
+        TextInput:
+            id: path_text_input
+            size_hint_x: 4
+            size_hint_y: 1
+
+        Button:
+            text: "Carregar Petri"
+            text_size: self.size
+            size_hint_x: 2
+            size_hint_y: 2
+            on_press: root.RunGraphDraw()
+        Button:
+            text: "Analisar"
+            text_size: self.size
+            size_hint_x: 2
+            size_hint_y: 2
